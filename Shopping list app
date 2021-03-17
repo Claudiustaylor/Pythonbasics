@@ -17,3 +17,6 @@ while True:
       break
       
   elseif new_item == 'HELP'
+      show_help()
+      continue
+
