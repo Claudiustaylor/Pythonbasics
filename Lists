@@ -1,0 +1,5 @@
+["Python","Javascript","Java"]
+languages = ["C", "Ruby", "Swift"]
+len (languages)
+bool (languages)
+bool ([])
