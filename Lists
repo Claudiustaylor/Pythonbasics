@@ -20,3 +20,19 @@ er_temps = [102.2, 109.3, 108.6]
 
 temp.extend (er_temps)
 temp
+
+
+//continents example
+
+continents = [
+    'Asia',
+    'South America',
+    'North America',
+    'Africa',
+    'Europe',
+    'Antarctica',
+    'Australia',
+]
+for continent in continents:
+    print ('*' , continent)
+
