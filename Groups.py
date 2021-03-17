@@ -12,3 +12,11 @@ musical_groups = [
 for group in musical_groups:
     group = ", ".join(group)
     print(group)
+
+    
+    for group in musical_groups:
+    print(", ".join(group))
+    break
+for tri in musical_groups:
+    if len(tri) == 3:
+        print(", ".join(tri))
