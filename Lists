@@ -3,3 +3,10 @@ languages = ["C", "Ruby", "Swift"]
 len (languages)
 bool (languages)
 bool ([])
+
+
+
+
+//Meeting Code
+attendees = ["Mark", "Roy", "Kara"]
+print ("At this meeting there is", len(attendees), "currenty")
