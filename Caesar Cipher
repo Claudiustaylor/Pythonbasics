@@ -1,0 +1,40 @@
+def getDoubleAlphabet (alpahabet):
+    doubleAlphabet = alphabet + alphabet
+    return doubleAlphabet
+
+
+
+# Requesting a message that will be enrypted from the user
+
+def getMessage():
+    stringTOEncrypt = input("Please enter a message to enrypt: ")
+    return stringTOEncrypt
+    
+    
+    
+# Getting a Cipher Key  (Using two alphabets allows you to have a cipher key up to 25)
+def getCipherKey():
+   shiftAmount = input( "Please enter a key (whole number from 1-25): ")
+   return shiftAmount
+   
+# Total message encryption function   
+
+def encryptMessage(message, cipherKey, alphabet):
+    encryptedMessage = ""
+    uppercaseMessage = ""
+    uppercaseMessage = message.upper()
+    for currentCharacter in uppercaseMessage:
+        position = alphabet.find(currentCharacter)
+        newPosition = position + int(cipherKey)
+        if currentCharacter in alphabet:
+            encryptedMessage = encryptedMessage + alphabet[newPosition]
+        else:
+            encryptedMessage = encryptedMessage + currentCharacter
+    return encryptedMessage
+    
+    
+  # Decrypting Messages
+  
+  def encryptMessage(message, cipherKey, alphabet):
+    decryptKey = -1 * int(cipherKey)
+    return encryptMessage(message, decryptKey, alphabet)
